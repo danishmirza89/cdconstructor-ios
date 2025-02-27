@@ -1,0 +1,53 @@
+name: cdconstructor_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.4.2
+  url_launcher: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/www/
+    - assets/www/css/
+    - assets/www/js/
+    - assets/www/images/
+    - assets/www/images/banner/
+    - assets/www/images/clients/
+    - assets/www/images/icon-image/
+    - assets/www/images/projects/
+    - assets/www/images/services/
+    - assets/www/images/slider-main/
+    - assets/www/images/slider-pages/
+    - assets/www/plugins/
+    - assets/www/plugins/animate-css/
+    - assets/www/plugins/bootstrap/
+    - assets/www/plugins/colorbox/
+    - assets/www/plugins/google-map/
+    - assets/www/plugins/jQuery/
+    - assets/www/plugins/shuffle/
+    - assets/www/plugins/fontawesome/
+    - assets/www/plugins/fontawesome/css/
+    - assets/www/plugins/fontawesome/webfonts/
+    - assets/www/plugins/slick/
+    - assets/www/plugins/slick/fonts/
+    - assets/logo.png
+    - assets/favicon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/favicon.png"
