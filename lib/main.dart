@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         );
       } catch (e2) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('No app found for $url! Install an email client.')),
+          SnackBar(content: Text('No app found for $url! Install an app.')),
         );
       }
     }
@@ -94,9 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<bool> _onWillPop() async {
     if (await _controller.canGoBack()) {
       _controller.goBack();
-      return false; // Don't exit app
+      return false;
     }
-    return true; // Exit app if no history
+    return true;
   }
 
   @override
@@ -120,6 +120,12 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => _launchUrl('mailto:info@cdconstructor.com?subject=Contact%20Us'),
               child: Icon(Icons.email),
               tooltip: 'Email Us',
+            ),
+            SizedBox(height: 10),
+            FloatingActionButton(
+              onPressed: () => _launchUrl('whatsapp://send?phone=+14696741200'),
+              child: Icon(Icons.chat), // WhatsApp icon—use a custom one if preferred
+              tooltip: 'Chat on WhatsApp',
             ),
           ],
         ),
