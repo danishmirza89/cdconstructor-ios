@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -123,9 +124,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 10),
             FloatingActionButton(
-              onPressed: () => _launchUrl('whatsapp://send?phone=+14696741200'),
-              child: Icon(Icons.chat), // WhatsApp icon—use a custom one if preferred
-              tooltip: 'Chat on WhatsApp',
+              onPressed: () => _launchUrl('https://wa.me/14696741200'), // Replace with your WhatsApp number
+              child: Icon(FontAwesomeIcons.whatsapp),
+              tooltip: 'Message Us on WhatsApp',
             ),
           ],
         ),
